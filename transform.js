@@ -12,7 +12,7 @@ if (!srcDirName) {
     srcDirName = dirs[0];
 }
 const srcPath = `./data/${srcDirName}`;
-const resultPath = './pages';
+const resultPath = './docs';
 
 // copy base files
 [
@@ -57,5 +57,5 @@ const asd = htaccess
             fs.mkdirSync(dirName);
         }
         fs.copyFileSync(fileName, `${dirName}/index.html`);
-        console.log({dirName, fileName});
+        console.log(`${fileName} -> ${dirName}/index.html`);
     });
