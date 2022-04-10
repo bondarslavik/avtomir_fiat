@@ -1,7 +1,7 @@
 const StaticServer = require('static-server');
 const server = new StaticServer({
-  rootPath: '.',            // required, the root of the server file tree
-  port: 8088,               // required, the port to listen
+  rootPath: './pages',            // required, the root of the server file tree
+  port: 80,               // required, the port to listen
   name: 'localhost',   // optional, will set "X-Powered-by" HTTP header
 //   host: '10.0.0.100',       // optional, defaults to any interface
   cors: '*',                // optional, defaults to undefined
